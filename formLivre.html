@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/942fcbebdd.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Ma librairie</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <i class="fa-solid fa-book"></i>
+        <a href="./index2.html">Ma Librairie</a>
+      </h1>
+      <nav>
+        <ul>
+          <li class="categorie1">
+            <h2>Livres</h2>
+            <ul>
+              <li><a href="./listesLivres.php">Listes des livres</a></li>
+              <li>
+                <a href="./formLivre.html" class="active">Ajouter un livre</a>
+              </li>
+            </ul>
+          </li>
+          <li class="categorie2">
+            <h2>Fournisseurs</h2>
+            <ul>
+              <li>
+                <a href="./listesFournisseurs">Listes des fournisseurs</a>
+              </li>
+              <li><a href="#">Ajouter un fournisseur</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <section>
+          <div class="formulaire">
+            <form action="insertLivre.php" method="post">
+              <fieldset>
+                <legend>Ajouter un livre</legend>
+                <div class="container">
+                  <label for="titre">Titre</label>
+                  <input type="text" name="titre" id="titre" size="50" required />
+                  <label for="theme">Theme</label>
+                  <input
+                    type="text"
+                    name="theme"
+                    id="theme"
+                    size="100"
+                    required
+                  />
+                  <label for="isbn">ISBN</label>
+                  <input type="text" name="isbn" id="isbn" required />
+                  <label for="page">Page</label>
+                  <input type="number" name="page" id="page" required />
+                  <label for="format">Format</label>
+                  <input type="text" name="format" id="format" required />
+                  <!-- <label for="lang">Quel langue parlez-vous ?</label>
+                  <div class="select">
+                    <select name="LANG[]" id="lang" size="4" multiple>
+                      <option value="francais">Français</option>
+                      <option value="anglais">Anglais</option>
+                      <option value="allemand">Allemand</option>
+                      <option value="espagnol">Espagnol</option>
+                    </select>
+                  </div>
+                  <div class="comp">
+                    <p>Mes compétences</p>
+                  </div>
+                  <div class="checkbox">
+                    <label for="comp">HTML5</label>
+                    <input
+                      type="checkbox"
+                      name="CHOIX[]"
+                      maxlength="25"
+                      value="html"
+                    />
+                    <label for="comp">CSS 3</label>
+                    <input
+                      type="checkbox"
+                      name="CHOIX[]"
+                      maxlength="25"
+                      value="css"
+                    />
+                    <label for="comp">PHP</label>
+                    <input
+                      type="checkbox"
+                      name="CHOIX[]"
+                      maxlength="25"
+                      value="php"
+                    />
+                    <label for="comp">MySQL</label>
+                    <input
+                      type="checkbox"
+                      name="CHOIX[]"
+                      maxlength="25"
+                      value="mysql"
+                    /> -->
+                  </div>
+                </div>
+                <div class="btn">
+                  <input type="submit" value="ENVOI" />
+                  <input type="reset" value="ANNULER" id="resetButton"  />
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

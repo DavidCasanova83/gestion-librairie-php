@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #ddd;
+}
+
+
+/* HEADER */
+
+header{
+    background-color: #222;
+    width: 100%;
+    height: 100px;
+    color:white;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    margin: 2rem;
+}
+h1 a{
+    color: white;
+    text-decoration: none;
+}
+h1 i {
+    margin-right: 1rem;
+}
+h2{
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.categorie1 .categorie2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+li{
+    list-style: none;
+    margin:0.5rem;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    border: solid 1px white;
+    padding: 3px 6px 3px 6px;
+}
+
+nav a:hover{
+    color: #222;
+    background-color: white;
+    text-decoration: none;
+}
+
+.active {
+    background-color: white;
+    color: #222;
+  }
+
+/* MAIN */
+
+main{
+    color:#222;
+    text-align: center;
+    background-color: #ddd;
+}
+
+.nb{
+    border: solid 3px #222;
+}
+
+
+.container-global{
+    display: flex;
+}
+
+.liste{
+    width: 75%;
+    margin: auto;
+   
+}
+
+.table-responsive{
+    height: 500px;
+
+}
+
+.table{
+    margin: auto;
+    overflow-y: hidden;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: #222;
+    width: 100%;
+    height: 100px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    border-top: solid 2rem #ddd;
+}
+
+
+/* FORMULAIRE */
+
+h1{
+    text-align: center;
+}
+.formulaire {
+    display: flex;
+    justify-content: center;
+}
+legend{
+    background-color: #222;
+    padding: 3px 6px 3px 6px;
+    color: #ddd;
+}
+
+.select option{
+    width: 100px;
+    padding: 3px;
+}
+section{
+    height: calc(100vh - 264px);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.container div,label{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.btn input{
+    padding: 3px 6px 3px 6px;
+}
+
+#nom,#prenom,#age{
+    width: 50%;
+    margin: auto;
+}
+
+fieldset{
+    background-color:rgb(173, 173, 173);
+}
