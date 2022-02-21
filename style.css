@@ -17,13 +17,21 @@ header{
     height: 100px;
     color:white;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    align-items: center;
 }
 
 h1{
-    margin: 2rem;
+    min-width: 250px;
+    margin: 2rem 0rem 2rem 1rem;
 }
+
 h1 a{
+    min-width: 603px;
+    color: white;
+    text-decoration: none;
+}
+h1 a:hover{
     color: white;
     text-decoration: none;
 }
@@ -34,7 +42,7 @@ h2{
     text-align: center;
 }
 
-ul{
+/* ul{
     display: flex;
     flex-direction: row;
 }
@@ -66,7 +74,22 @@ nav a:hover{
 .active {
     background-color: white;
     color: #222;
-  }
+  } */
+
+
+.dropdown button{
+    text-decoration: none;
+    border: solid 1px white;
+    margin: 2rem 0rem 2rem 1rem;
+    padding: 3px 6px 3px 6px;
+}
+.dropdown a:hover{
+    text-decoration: none;
+    border: solid 1px white;
+    padding: 3px 6px 3px 6px;
+}
+
+
 
 /* MAIN */
 
@@ -83,6 +106,7 @@ main{
 
 .container-global{
     display: flex;
+    height: calc(100vh - 200px);
 }
 
 .liste{

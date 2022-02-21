@@ -8,7 +8,26 @@
 </head>
 <body>
 <?php
-   $connex = mysqli_connect('localhost', 'root', '', 'gestion_librairie');
+
+   $connex = mysqli_connect('localhost', 'root', '', 'gestionlibrairie2');
+//    try{
+//     $db = new PDO('mysql:host=localhost;dbname=gestionlibrairie2','root','');
+//     $db->query("SET NAMES'utf8'");
+//     $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+// }
+// catch(PDOException $e){
+//     die("<p> Echec de connexion. Erreur[".$e->getCode()."] : ".$e->getMessage()."</p>");
+// }
+// //Affichage d'un message en cas d'erreurs 
+// if(!$db) 
+// { 
+//     echo "<script type=text/javascript>"; 
+//     echo "alert('Connexion impossible à la base')</script>"; 
+// } 
+// else 
+// {
+//     $requete= $db->prepare('SELECT * FROM livres');
+//     $requete->execute();
 
    //Affichage d'un message en cas d'erreurs 
    if(!$connex) 
